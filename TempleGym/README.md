@@ -64,11 +64,10 @@ Create `apps/server/.env`:
 DATABASE_URL=postgresql://...
 JWT_SECRET=your-secret-at-least-16-chars
 JWT_EXPIRES_IN=7d
-SMTP_HOST=smtp.gmail.com
-SMTP_PORT=587
-SMTP_USER=your-account@gmail.com
-SMTP_PASS=your-app-password
-SMTP_FROM=noreply@yourdomain.com
+AWS_REGION=ap-northeast-1
+AWS_ACCESS_KEY_ID=your-iam-access-key-id
+AWS_SECRET_ACCESS_KEY=your-iam-secret-access-key
+EMAIL_FROM=noreply@yourdomain.com
 OTP_EXPIRY_MINUTES=10
 GYM_LAT=39.9812
 GYM_LNG=-75.1502
