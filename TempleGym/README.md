@@ -64,7 +64,10 @@ Create `apps/server/.env`:
 DATABASE_URL=postgresql://...
 JWT_SECRET=your-secret-at-least-16-chars
 JWT_EXPIRES_IN=7d
-RESEND_API_KEY=re_...
+SMTP_HOST=smtp.gmail.com
+SMTP_PORT=587
+SMTP_USER=your-account@gmail.com
+SMTP_PASS=your-app-password
 SMTP_FROM=noreply@yourdomain.com
 OTP_EXPIRY_MINUTES=10
 GYM_LAT=39.9812
