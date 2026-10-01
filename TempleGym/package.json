@@ -12,8 +12,8 @@
     "typecheck": "npm run typecheck --workspaces --if-present"
   },
   "overrides": {
-    "react": "19.1.0",
-    "react-dom": "19.1.0",
-    "babel-preset-expo": "~54.0.0"
+    "react": "19.2.3",
+    "react-dom": "19.2.3",
+    "babel-preset-expo": "~57.0.0"
   }
 }
