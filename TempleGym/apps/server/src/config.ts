@@ -14,7 +14,7 @@ const envSchema = z.object({
   GYM_LNG:            z.coerce.number(),
   GYM_RADIUS_M:       z.coerce.number().default(100), //500 might be too large, the distance between the gym and campus is only 200 meters
   PORT:               z.coerce.number().default(3000),
-  NODE_ENV:           z.enum(['development', 'production', 'test']).default('development'),
+  NODE_ENV:           z.enum(['development', 'staging', 'production', 'test']).default('development'),
   DEMO_EMAILS:        z.string().optional(), // comma-separated list of demo accounts that skip OTP email
 });
 
