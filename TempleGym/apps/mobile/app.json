@@ -10,7 +10,11 @@
       "backgroundColor": "#A41E35"
     },
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "com.templegym.app",
+      "infoPlist": {
+        "NSLocationWhenInUseUsageDescription": "TempleGym uses your location to confirm you're at the gym when you check in for a workout."
+      }
     },
     "android": {
       "adaptiveIcon": {
