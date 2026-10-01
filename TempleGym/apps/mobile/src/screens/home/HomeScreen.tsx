@@ -1,4 +1,4 @@
-import React, { useEffect, useState, useRef } from "react";
+import { useEffect, useState, useRef } from "react";
 import {
   View,
   Text,
@@ -11,7 +11,6 @@ import {
   Pressable,
   Animated,
   LayoutAnimation,
-  Image,
   Dimensions,
 } from "react-native";
 import { useNavigation, useRoute } from "@react-navigation/native";

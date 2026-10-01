@@ -1,4 +1,3 @@
-import React from 'react';
 import { Animated, StyleSheet } from 'react-native';
 
 interface Props {

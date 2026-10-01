@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useCallback } from 'react';
+import { useState, useEffect, useCallback } from 'react';
 import {
   View,
   Text,
@@ -119,8 +119,9 @@ export default function SessionLoggingScreen() {
   }
 
   async function handleEndSession() {
+    if (!activeSession) return;
     const exercisesWithSets = activeSession.exercises.filter((e) => e.sets.length > 0);
-    if (!activeSession || exercisesWithSets.length === 0) {
+    if (exercisesWithSets.length === 0) {
       Alert.alert('No sets logged', 'Add at least one set before ending the session.');
       return;
     }
