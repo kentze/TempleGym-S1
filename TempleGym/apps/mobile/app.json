@@ -4,16 +4,15 @@
     "slug": "mobile",
     "version": "1.0.0",
     "orientation": "portrait",
+    "icon": "./assets/icon.png",
     "backgroundColor": "#A41E35",
     "userInterfaceStyle": "light",
-    "splash": {
-      "backgroundColor": "#A41E35"
-    },
     "ios": {
       "supportsTablet": true,
       "bundleIdentifier": "com.templegym.app",
       "infoPlist": {
-        "NSLocationWhenInUseUsageDescription": "TempleGym uses your location to confirm you're at the gym when you check in for a workout."
+        "NSLocationWhenInUseUsageDescription": "TempleGym uses your location to confirm you're at the gym when you check in for a workout.",
+        "ITSAppUsesNonExemptEncryption": false
       }
     },
     "android": {
@@ -31,7 +30,14 @@
     "plugins": [
       "expo-secure-store",
       "expo-image",
-      "expo-splash-screen",
+      [
+        "expo-splash-screen",
+        {
+          "image": "./assets/splash-icon.png",
+          "resizeMode": "contain",
+          "backgroundColor": "#A41E35"
+        }
+      ],
       "expo-status-bar"
     ],
     "extra": {
