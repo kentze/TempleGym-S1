@@ -33,6 +33,12 @@
       "expo-image",
       "expo-splash-screen",
       "expo-status-bar"
-    ]
+    ],
+    "extra": {
+      "eas": {
+        "projectId": "83ae0b3c-bb77-4961-ba58-3ba02065d87a"
+      }
+    },
+    "owner": "kentzeccc"
   }
 }
